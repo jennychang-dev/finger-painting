@@ -15,6 +15,8 @@
 		B25541D021F2B04A00368808 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B25541CF21F2B04A00368808 /* main.m */; };
 		B25541DA21F2B04A00368808 /* FingerPaintingApp2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B25541D921F2B04A00368808 /* FingerPaintingApp2Tests.m */; };
 		B25541E521F2B04A00368808 /* FingerPaintingApp2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B25541E421F2B04A00368808 /* FingerPaintingApp2UITests.m */; };
+		B25541F421F2B05F00368808 /* DrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B25541F321F2B05F00368808 /* DrawingView.m */; };
+		B25541F721F2B5F400368808 /* DrawLineSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = B25541F621F2B5F400368808 /* DrawLineSegment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		B25541E021F2B04A00368808 /* FingerPaintingApp2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FingerPaintingApp2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B25541E421F2B04A00368808 /* FingerPaintingApp2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FingerPaintingApp2UITests.m; sourceTree = "<group>"; };
 		B25541E621F2B04A00368808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B25541F221F2B05F00368808 /* DrawingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawingView.h; sourceTree = "<group>"; };
+		B25541F321F2B05F00368808 /* DrawingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawingView.m; sourceTree = "<group>"; };
+		B25541F521F2B5F400368808 /* DrawLineSegment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawLineSegment.h; sourceTree = "<group>"; };
+		B25541F621F2B5F400368808 /* DrawLineSegment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawLineSegment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				B25541C121F2B04900368808 /* AppDelegate.m */,
 				B25541C321F2B04900368808 /* ViewController.h */,
 				B25541C421F2B04900368808 /* ViewController.m */,
+				B25541F221F2B05F00368808 /* DrawingView.h */,
+				B25541F321F2B05F00368808 /* DrawingView.m */,
+				B25541F521F2B5F400368808 /* DrawLineSegment.h */,
+				B25541F621F2B5F400368808 /* DrawLineSegment.m */,
 				B25541C621F2B04900368808 /* Main.storyboard */,
 				B25541C921F2B04A00368808 /* Assets.xcassets */,
 				B25541CB21F2B04A00368808 /* LaunchScreen.storyboard */,
@@ -262,9 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B25541F721F2B5F400368808 /* DrawLineSegment.m in Sources */,
 				B25541C521F2B04900368808 /* ViewController.m in Sources */,
 				B25541D021F2B04A00368808 /* main.m in Sources */,
 				B25541C221F2B04900368808 /* AppDelegate.m in Sources */,
+				B25541F421F2B05F00368808 /* DrawingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

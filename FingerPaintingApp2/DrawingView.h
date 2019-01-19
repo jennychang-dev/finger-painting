@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DrawingView : UIView
 
+-(void)clear;
+-(void)receiveColorChoice:(UIColor *)color;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -7,17 +7,42 @@
 //
 
 #import "ViewController.h"
+#import "DrawingView.h"
+#import "DrawLineSegment.h"
 
 @interface ViewController ()
+
+@property (strong, nonatomic) IBOutlet DrawingView *drawView;
+
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+- (IBAction)clear {
+    [self.drawView clear];
 }
+
+- (IBAction)greyColor:(UIButton *)sender {
+    [self.drawView receiveColorChoice:[UIColor grayColor]];
+    }
+
+- (IBAction)greenColor:(UIButton *)sender {
+    [self.drawView receiveColorChoice:[UIColor greenColor]];
+}
+
+- (IBAction)yellowColor:(UIButton *)sender {
+    [self.drawView receiveColorChoice:[UIColor yellowColor]];
+}
+
+- (IBAction)redColor:(UIButton *)sender {
+    [self.drawView receiveColorChoice:[UIColor redColor]];
+}
+
+- (IBAction)blueColor:(UIButton *)sender {
+    [self.drawView receiveColorChoice:[UIColor blueColor]];
+}
+
 
 
 @end

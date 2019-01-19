@@ -10,4 +10,24 @@
 
 @implementation DrawLineSegment
 
+-(instancetype) initWithFirstPoint:(CGPoint)first
+                       secondPoint:(CGPoint)second
+{
+    if (self= [super init])
+    {
+    
+    _firstPoint = first;
+    _secondPoint = second;
+}
+    return self;
+}
+
+-(instancetype) initWithColor:(UIColor*)color {
+    if (self = [super init])
+    {
+    _colour = color;
+}
+    return self;
+}
+
 @end

@@ -6,11 +6,21 @@
 //  Copyright © 2019 Jenny Chang. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import UIKit;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DrawLineSegment : NSObject
+
+@property (nonatomic, readonly) CGPoint firstPoint;
+@property (nonatomic, readonly) CGPoint secondPoint;
+
+-(instancetype) initWithFirstPoint:(CGPoint)first
+                       secondPoint:(CGPoint)second;
+
+-(instancetype) initWithColor:(UIColor*)color;
+
+@property (nonatomic, weak) UIColor *colour;
 
 @end
 
